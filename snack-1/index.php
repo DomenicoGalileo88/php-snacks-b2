@@ -47,7 +47,7 @@ foreach ($ads as $active_ad) {
 };
 //var_dump($active_ads);
 
-$active_ad = $active_ads[rand(0, (count($active_ads) - 1))];
+$active_ad = $active_ads[array_rand($active_ads, 1)];
 //var_dump($active_ad);
 ?>
 
