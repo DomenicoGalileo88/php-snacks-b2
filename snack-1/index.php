@@ -64,8 +64,11 @@ $active_ad = $active_ads[rand(0, (count($active_ads) - 1))];
 <body>
 
     <div class="ads">
-        <img src="<?php echo $active_ad['image_path'] ?>" alt="">
+        <a href="<?php echo $active_ad['link'] ?>">
+            <img src="<?php echo $active_ad['image_path'] ?>" alt="">
+        </a>
     </div>
+
 
 </body>
 
