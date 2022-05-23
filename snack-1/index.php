@@ -37,9 +37,18 @@ $ads = [
 
 ];
 
-var_dump($ads);
+//var_dump($ads);
+$active_ads = [];
 
+foreach ($ads as $active_ad) {
+    if ($active_ad['is_active'] == true) {
+        $active_ads[] = $active_ad;
+    }
+};
+//var_dump($active_ads);
 
+$active_ad = $active_ads[rand(0, (count($active_ads) - 1))];
+//var_dump($active_ad);
 ?>
 
 <!DOCTYPE html>
@@ -54,7 +63,9 @@ var_dump($ads);
 
 <body>
 
-
+    <div class="ads">
+        <img src="<?php echo $active_ad['image_path'] ?>" alt="">
+    </div>
 
 </body>
 
