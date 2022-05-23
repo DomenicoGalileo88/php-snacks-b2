@@ -59,6 +59,11 @@ $active_ad = $active_ads[rand(0, (count($active_ads) - 1))];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>snack-1</title>
+    <style>
+        img{
+            max-width: 300px;
+        }
+    </style>
 </head>
 
 <body>
